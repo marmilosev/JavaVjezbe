@@ -51,7 +51,7 @@ public class Unos {
         while(true){
             try {
                 return sdf.parse(JOptionPane.showInputDialog(poruka + " u dd.MM.yyyy. formatu"));
-            } catch (ParseException ex) {
+            } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Neispravan podatak");
             }
         }
