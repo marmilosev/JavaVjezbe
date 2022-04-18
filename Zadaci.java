@@ -38,3 +38,20 @@ private void najmanjiDatum() {
         }
         System.out.println(suma);
 
+// Za sve decimalne tipove podataka u entitetu prijatelj izračunava se prosjek na svim unesenim instancama entiteta muškarac
+
+        double prosjek = 0;
+        double eura = 0;
+        double novcica = 0;
+        int i = 0;
+        for(Muskarac m : muskarci){
+            
+            if(m.getPrijatelj().getDecBroj() != 0){
+                i++;
+                eura += m.getEura();
+                novcica += m.getNovcica();
+            }
+            prosjek = (eura + novcica)/i;
+        }
+        System.out.println("Prosjek: " + prosjek);
+
