@@ -81,7 +81,7 @@ private void najmanjiDatum() {
         //Za definiran niz ocjena ispisati prosječnu ocjenu
         /*
         int[] niz = {1, 2, 5, 4, 2, 3, 4, 5, 1, 2};
-        int suma = 0;
+        float suma = 0;
         int duljina = niz.length;
         float AS;
         for (int i : niz) {
